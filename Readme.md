@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Mariia Chervinska](https://up.htmlacademy.ru/htmlcss/32/user/182213).
-* Наставник: `Дмитрий Гуляев`.
+* Наставник: [Дмитрий Гуляев](https://htmlacademy.ru/profile/dima). 
 
 ---
 
