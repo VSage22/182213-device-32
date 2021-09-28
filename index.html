@@ -7,16 +7,13 @@
   <body>
     <!--header-->
     <header class="page-header">
+      <img class="page-header-logo" src="" alt="Логотип магазина Device">
       <nav class="navigation">
-        <img class="page-header-logo" src="" alt="Логотип магазина Device">
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-              <div class="search-container">
                 <form action="https://echo.htmlacademy.ru/">
                   <input type="text" placeholder="Поиск по сайту" name="search">
-                  <button type="submit"><span class="visually-hidden">Поиск</span></button>
                 </form>
-              </div>
           </li>
 
           <li class="navigation-item">
@@ -31,7 +28,7 @@
         </ul>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">КАТАЛОГ ТОВАРОВ</a>
+            <a class="navigation-link" href="catalog.html">Каталог товаров</a>
             <ul class="submenu">
               <li class="catalog-item">
                 <a class="catalog-link" href="#">Виртуальная реальность</a>
@@ -53,17 +50,21 @@
               </li>
             </ul>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">ДОСТАВКА</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">ГАРАНТИЯ</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">КОНТАКТЫ</a>
-          </li>
         </ul>
       </nav>
+
+      <ul class="user-menu">
+        <li class="user-menu-item">
+          <a class="user-menu-link" href="#">Доставка</a>
+        </li>
+        <li class="user-menu-item">
+          <a class="user-menu-link" href="#">Гарантия</a>
+        </li>
+        <li class="user-menu-item">
+          <a class="user-menu-link" href="#">Контакты</a>
+        </li>
+      </ul>
+
     </header>
 
 <!--main-->
@@ -98,62 +99,64 @@
       </section>
 
       <section class="slider">
-        <div class="slider-1">
-          <img src="">
-          <h1>01</h1>
-          <h2>Порхает как бабочка, жалит как пчела!</h2>
-          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
-            лазером, замаскированным под стандартную камеру.
-          </p>
-          <a class="button" href="#">Подробнее</a>
-          <ul class="advantages">
-            <li class="advantages-item">
-              <span class="advantages-number">800 м</span>
-              <p class="advantages-description">Дальность полета</p>
-            </li>
-            <li class="advantages-item">
-              <span class="advantages-number">50 м</span>
-              <p class="advantages-description">Радиус поражения</p>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <img src="">
-          <h1>02</h1>
-          <h2>Худеем правильно!</h2>
-          <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
-            не пропускать занятия и соблюдать диету.</p>
+        <ul class="slider">
+          <li class="slider-1">
+            <img src="">
+            <span>01</span>
+            <h2>Порхает как бабочка, жалит как пчела!</h2>
+            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
+              лазером, замаскированным под стандартную камеру.
+            </p>
+            <a class="button" href="#">Подробнее</a>
+              <ul class="advantages">
+                <li class="advantages-item">
+                  <span class="advantages-number">800 м</span>
+                    <p class="advantages-description">Дальность полета</p>
+                </li>
+                <li class="advantages-item">
+                  <span class="advantages-number">50 м</span>
+                    <p class="advantages-description">Радиус поражения</p>
+                </li>
+              </ul>
+          </li>
+          <li class="slider-2">
+            <img src="">
+            <span>02</span>
+            <h2>Худеем правильно!</h2>
+            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
+              не пропускать занятия и соблюдать диету.</p>
+            <a class="button" href="#">Подробнее</a>
+              <ul class="advantages">
+                <li class="advantages-item">
+                  <span class="advantages-number">48 часов</span>
+                    <p class="advantages-description">Без подзарядки</p>
+                </li>
+              </ul>
+          </li>
+          <li class="slider-3">
+            <img src="">
+            <span>03</span>
+            <h2>Делай селфи, как Бен Стиллер!</h2>
+            <p>Самая длинная палка для селфи доступна в нашем магазине.
+              Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
+            </p>
             <a class="button" href="#">Подробнее</a>
             <ul class="advantages">
               <li class="advantages-item">
-                <span class="advantages-number">48 часов</span>
-                <p class="advantages-description">Без подзарядки</p>
+                <span class="advantages-number">8,5 м</span>
+                <p class="advantages-description">Длина палки</p>
+              </li>
+              <li class="advantages-item">
+                <span class="advantages-number">5 кг</span>
+                <p class="advantages-description">Вес палки</p>
+              </li>
+              <li class="advantages-item">
+                <span class="advantages-number">Карбон</span>
+                <p class="advantages-description">Материал</p>
               </li>
             </ul>
-        </div>
-        <div>
-          <img src="">
-          <h1>03</h1>
-          <h2>Делай селфи, как Бен Стиллер!</h2>
-          <p>Самая длинная палка для селфи доступна в нашем магазине.
-            Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
-          </p>
-          <a class="button" href="#">Подробнее</a>
-          <ul class="advantages">
-            <li class="advantages-item">
-              <span class="advantages-number">8,5 м</span>
-              <p class="advantages-description">Длина палки</p>
-            </li>
-            <li class="advantages-item">
-              <span class="advantages-number">5 кг</span>
-              <p class="advantages-description">Вес палки</p>
-            </li>
-            <li class="advantages-item">
-              <span class="advantages-number">Карбон</span>
-              <p class="advantages-description">Материал</p>
-            </li>
-          </ul>
-        </div>
+          </li>
+        </ul>
       </section>
 
 
@@ -197,36 +200,39 @@
         <h2 class="visually-hidden">Сервисы</h2>
         <ul class="services-list">
           <li class="services-item">
-            <a class="services-link" href="#delivery">ДОСТАВКА</a>
+            <a class="services-link" href="#delivery">Доставка</a>
           </li>
           <li class="services-item">
-            <a class="services-link" href="#guarantee">ГАРАНТИЯ</a>
+            <a class="services-link" href="#guarantee">Гарантия</a>
           </li>
-           <li class="services-item">
-            <a class="services-link" href="#credit">КРЕДИТ</a>
+          <li class="services-item">
+            <a class="services-link" href="#credit">Кредит</a>
           </li>
         </ul>
-        <section id="delivery">
-          <h3>ДОСТАВКА</h3>
-          <p>Мы с удовольствием доставим ваш товар прямо
-            к вашему подъезду совершенно бесплатно! Ведь
-            мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          <img src="" alt="Картинка">
-        </section>
-        <section id="guarantee">
-          <h3>ГАРАНТИЯ</h3>
-          <p>Если из-за возгорания купленного у нас товара у вас
-            сгорит дом — не переживайте, мы выдадим вам новый.
-            Товар, не дом, конечно же.</p>
-          <img src="" alt="Картинка">
-        </section>
-        <section id="credit">
-          <h3>КРЕДИТ</h3>
-          <p>Залезть в долговую яму стало проще! Кредитные
-            консультанты подберут для вас наиболее выгодные
-            условия кредита. Выгодные для банка, разумеется.</p>
-          <img src="" alt="Картинка">
-        </section>
+
+        <ul class="services-list">
+          <li id="delivery">
+            <h3>Доставка</h3>
+            <p>Мы с удовольствием доставим ваш товар прямо
+              к вашему подъезду совершенно бесплатно! Ведь
+              мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            <img src="" alt="Картинка">
+          </li>
+          <li id="guarantee">
+            <h3>Гарантия</h3>
+            <p>Если из-за возгорания купленного у нас товара у вас
+              сгорит дом — не переживайте, мы выдадим вам новый.
+              Товар, не дом, конечно же.</p>
+            <img src="" alt="Картинка">
+          </li>
+          <li id="credit">
+            <h3>Кредит</h3>
+            <p>Залезть в долговую яму стало проще! Кредитные
+              консультанты подберут для вас наиболее выгодные
+              условия кредита. Выгодные для банка, разумеется.</p>
+            <img src="" alt="Картинка">
+          </li>
+        </ul>
       </section>
 
       <div class="delivery">
@@ -269,8 +275,8 @@
       </section>
 
       <section class="subscribe">
-       <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-       <p class="subscribe-text">Еженедельный дайджест с обзорами новинок,
+        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <p class="subscribe-text">Еженедельный дайджест с обзорами новинок,
           длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="subscribe-email">
@@ -278,7 +284,7 @@
             <input class="field" type="email" placeholder="Ваш e-mail" id="subscribe-email" required>
             <button class="button subscribe-button" type="submit">Подписаться</button>
           </p>
-          <img class="checkpoint"src="">
+          <img class="checkpoint" src="">
           <p>Это бесплатно</p>
         </form>
       </section>
@@ -299,13 +305,13 @@
         <h2 class="visually-hidden">Сервисы</h2>
         <ul class="footer-services-list">
           <li class="footer-services-item">
-            <a class="services-link" href="#">ДОСТАВКА</a>
+            <a class="services-link" href="#">Доставка</a>
           </li>
           <li class="footer-services-item">
-            <a class="services-link" href="#">ГАРАНТИЯ</a>
+            <a class="services-link" href="#">Гарантия</a>
           </li>
           <li class="footer-services-item">
-            <a class="services-link" href="#">КОНТАКТЫ</a>
+            <a class="services-link" href="#">Контакты</a>
           </li>
         </ul>
       </section>
