@@ -7,18 +7,15 @@
   <body>
     <!--header-->
     <header class="page-header">
+      <img class="page-header-logo" src="" alt="Логотип магазина Device">
       <nav class="navigation">
-        <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" src="" alt="Логотип магазина Device">
-        </a>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">
-                Поиск
-              </span>
-            </a>
+                <form action="https://echo.htmlacademy.ru/">
+                  <input type="text" placeholder="Поиск по сайту" name="search">
+                </form>
           </li>
+
           <li class="navigation-item">
             <a class="navigation-link" href="#">Войти</a>
           </li>
@@ -31,7 +28,7 @@
         </ul>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">КАТАЛОГ ТОВАРОВ</a>
+            <a class="navigation-link" href="catalog.html">Каталог товаров</a>
             <ul class="submenu">
               <li class="catalog-item">
                 <a class="catalog-link" href="#">Виртуальная реальность</a>
@@ -53,17 +50,21 @@
               </li>
             </ul>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">ДОСТАВКА</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">ГАРАНТИЯ</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">КОНТАКТЫ</a>
-          </li>
         </ul>
       </nav>
+
+      <ul class="user-menu">
+        <li class="user-menu-item">
+          <a class="user-menu-link" href="#">Доставка</a>
+        </li>
+        <li class="user-menu-item">
+          <a class="user-menu-link" href="#">Гарантия</a>
+        </li>
+        <li class="user-menu-item">
+          <a class="user-menu-link" href="#">Контакты</a>
+        </li>
+      </ul>
+
     </header>
 
 <!--main-->
@@ -85,7 +86,7 @@
 
 <!--FILTERS-->
   <section class="catalog-products">
-    <h2 class="catalog-filter-name">ФИЛЬТР:</h2>
+    <h2 class="catalog-filter-name">Фильтр:</h2>
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="GET">
       <fieldset class="catalog-filter-group">
         <legend class="catalog-filter-title">Стоимость</legend>
@@ -163,12 +164,12 @@
         </ul>
       </fieldset>
 
-        <button class="button" type="submit">ПОКАЗАТЬ</button>
+        <button class="button" type="submit">Показать</button>
       </form>
 
     <!--SORTING-->
       <form class="sorting-type">
-        <label class="sorting-type-name" for="sorting">СОРТИРОВКА</label>
+        <label class="sorting-type-name" for="sorting">Сортировка</label>
         <select class="select-control" id="sorting" name="sorting">
           <option value="popular">Сначала популярные</option>
         </select>
@@ -188,7 +189,7 @@
             <h4 class="product-card-title">Любительская селфи-палка</h4>
           </a>
           <span class="product-card-price">500 ₽</span>
-          <a href="#" class="product-card-button button">ПОДРОБНЕЕ</a>
+          <a href="#" class="product-card-button button">Подробнее</a>
         </li>
         <li class="product-card">
           <a class="product-card-link">
@@ -196,7 +197,7 @@
             <h4 class="product-card-title">Профессиональная селфи-палка</h4>
           </a>
           <span class="product-card-price">1 500 ₽</span>
-          <a href="#" class="product-card-button button">ПОДРОБНЕЕ</a>
+          <a href="#" class="product-card-button button">Подробнее</a>
         </li>
         <li class="product-card">
           <a class="product-card-link">
@@ -204,7 +205,7 @@
             <h4 class="product-card-title">Непотопляемая селфи-палка</h4>
           </a>
           <span class="product-card-price">2 500 ₽</span>
-          <a href="#" class="product-card-button button">ПОДРОБНЕЕ</a>
+          <a href="#" class="product-card-button button">Подробнее</a>
         </li>
         <li class="product-card">
           <a class="product-card-link">
@@ -212,16 +213,16 @@
             <h4 class="product-card-title">Селфи-палка «Следуй за мной»</h4>
           </a>
           <span class="product-card-price">4 900 ₽</span>
-          <a href="#" class="product-card-button button">ПОДРОБНЕЕ</a>
+          <a href="#" class="product-card-button button">Подробнее</a>
         </li>
       </ul>
 
-      <button class="button pagination-show-more" type="button">ЗАГРУЗИТЬ ЕЩЕ</button>
+      <button class="button pagination-show-more" type="button">Загрузить еще</button>
 
       <ul class="pagination">
         <li class="pagination-item">
           <a class="pagination-link pagination-prev pagination-disabled">
-            <span class="pagination-prev">НАЗАД</span>
+            <span class="pagination-prev">Назад</span>
           </a>
         </li>
         <li class="pagination-item">
@@ -241,24 +242,12 @@
         </li>
         <li class="pagination-item">
           <a class="pagination-link pagination-next" href="#">
-            <span class="pagination-next">ВПЕРЁД</span>
+            <span class="pagination-next">Вперёд</span>
           </a>
         </li>
       </ul>
-
   </section>
 </main>
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!--footer-->
@@ -276,13 +265,13 @@
     <h2 class="visually-hidden">Сервисы</h2>
     <ul class="footer-services-list">
       <li class="footer-services-item">
-        <a class="services-link" href="#">ДОСТАВКА</a>
+        <a class="services-link" href="#">Доставка</a>
       </li>
       <li class="footer-services-item">
-        <a class="services-link" href="#">ГАРАНТИЯ</a>
+        <a class="services-link" href="#">Гарантия</a>
       </li>
       <li class="footer-services-item">
-        <a class="services-link" href="#">КОНТАКТЫ</a>
+        <a class="services-link" href="#">Контакты</a>
       </li>
     </ul>
   </section>
